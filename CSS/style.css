@@ -8,39 +8,6 @@
   font-style: normal;
 }
 
-#choose-game {
-	font-family: Calibri, Tahoma, Arial;
-	color: black;
-	font-size: 14px;
-	margin-bottom: 0.5em;
-	font-weight: bold;
-	opacity: 0;
-}
-
-#choose-game.show {
-	opacity: 1;
-	transition: opacity ease-in 0.5s 0.5s;
-}
-
-#choose-game select {
-	-webkit-appearance: none;
-	border: 1px solid black;
-	padding: 3px;
-	padding-left: 6px;
-	padding-right: 6px;
-	font-size: 14px;
-	box-sizing: border-box;
-}
-
-.wgo-player-main {
-	opacity: 0;
-	transition: opacity ease-in 0.5s 0.5s;
-}
-
-.wgo-player-main.show {
-	opacity: 1;
-}
-
 /* Available icons: */
 .wgo-icon-fast-forward:before { content: '\e817'; }
 .wgo-icon-to-end:before { content: '\e81a'; }
@@ -66,6 +33,9 @@
 	height: 100%;
 	line-height: normal;
 	font-size: 16px;
+	position: relative;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 
 .wgo-player-main:after {
